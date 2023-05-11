@@ -21,17 +21,3 @@ Route::get('/', [ListingController::class, 'index']);
 //Single Listing
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
-// Route::get('/hello', function () {
-//     return response('<h1>Hello World</h1>', 200)
-//         ->header('Content-Type', 'text/plain')
-//         ->header('foo', 'bar');
-
-// });
-
-// // Route::get('/posts/{id}', function($id) {
-// //     return response('Post ' . $id)
-// // }) ->where('id','[0-9]+');
-
-// Route::get('/search', function(Request $request) {
-//     dd($request);
-// });

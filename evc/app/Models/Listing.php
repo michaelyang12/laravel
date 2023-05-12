@@ -23,4 +23,9 @@ class Listing extends Model
                 ->orWhere('tags', 'like', '%' . request('search') . '%'); 
         }
     }
+
+    //relationship to user
+    public function user() {
+        return $this->belogsTo(User::class, 'user_id');
+    }
 }
